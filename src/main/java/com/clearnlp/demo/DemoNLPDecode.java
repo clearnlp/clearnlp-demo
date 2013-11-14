@@ -66,13 +66,12 @@ public class DemoNLPDecode
 	{
 		AbstractTokenizer tokenizer  = NLPGetter.getTokenizer(language);
 		AbstractComponent tagger     = NLPGetter.getComponent(modelType, language, NLPLib.MODE_POS);
-		AbstractComponent analyzer   = NLPGetter.getComponent(modelType, language, NLPLib.MODE_MORPH);
 		AbstractComponent parser     = NLPGetter.getComponent(modelType, language, NLPLib.MODE_DEP);
 		AbstractComponent identifier = NLPGetter.getComponent(modelType, language, NLPLib.MODE_PRED);
 		AbstractComponent classifier = NLPGetter.getComponent(modelType, language, NLPLib.MODE_ROLE);
 		AbstractComponent labeler    = NLPGetter.getComponent(modelType, language, NLPLib.MODE_SRL);
 		
-		AbstractComponent[] components = {tagger, analyzer, parser, identifier, classifier, labeler};
+		AbstractComponent[] components = {tagger, parser, identifier, classifier, labeler};
 		
 		String sentence = "I'd like to meet Dr. Choi.";
 		process(tokenizer, components, sentence);

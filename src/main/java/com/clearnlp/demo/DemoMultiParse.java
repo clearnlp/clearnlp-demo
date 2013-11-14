@@ -68,13 +68,12 @@ public class DemoMultiParse
 	{
 		AbstractTokenizer tokenizer  = NLPGetter.getTokenizer(language);
 		AbstractComponent tagger     = NLPGetter.getComponent(modelType, language, NLPLib.MODE_POS);
-		AbstractComponent analyzer   = NLPGetter.getComponent(modelType, language, NLPLib.MODE_MORPH);
 		AbstractComponent parser     = NLPGetter.getComponent(modelType, language, NLPLib.MODE_DEP);
 		AbstractComponent identifier = NLPGetter.getComponent(modelType, language, NLPLib.MODE_PRED);
 		AbstractComponent classifier = NLPGetter.getComponent(modelType, language, NLPLib.MODE_ROLE);
 		AbstractComponent labeler    = NLPGetter.getComponent(modelType, language, NLPLib.MODE_SRL);
 		
-		AbstractComponent[] preComponents  = {tagger, analyzer};	// components used before parsing
+		AbstractComponent[] preComponents  = {tagger};	// components used before parsing
 		AbstractComponent[] postComponents = {identifier, classifier, labeler};	// components used after parsing
 		
 		String sentence = "I know you know who I know.";

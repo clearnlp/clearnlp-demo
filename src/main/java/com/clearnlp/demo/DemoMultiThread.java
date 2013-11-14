@@ -71,13 +71,12 @@ public class DemoMultiThread
 	{
 		AbstractTokenizer tokenizer  = NLPGetter.getTokenizer(language);
 		AbstractComponent tagger     = NLPGetter.getComponent(modelType, language, NLPLib.MODE_POS);
-		AbstractComponent analyzer   = NLPGetter.getComponent(modelType, language, NLPLib.MODE_MORPH);
 		AbstractComponent parser     = NLPGetter.getComponent(modelType, language, NLPLib.MODE_DEP);
 		AbstractComponent identifier = NLPGetter.getComponent(modelType, language, NLPLib.MODE_PRED);
 		AbstractComponent classifier = NLPGetter.getComponent(modelType, language, NLPLib.MODE_ROLE);
 		AbstractComponent labeler    = NLPGetter.getComponent(modelType, language, NLPLib.MODE_SRL);
 		
-		c_components = new AbstractComponent[]{tagger, analyzer, parser, identifier, classifier, labeler};
+		c_components = new AbstractComponent[]{tagger, parser, identifier, classifier, labeler};
 		process(tokenizer, UTInput.createBufferedFileReader(inputFile), UTOutput.createPrintBufferedFileStream(outputFile), numThreads);
 	}
 	
