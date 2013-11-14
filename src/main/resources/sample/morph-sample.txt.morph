@@ -1,52 +1,52 @@
-catchier	JJR	catchy
-largest	JJS	large
-dominated	JJ	dominated
-dominated	VBD	dominate
-best	RBS	well
-actively	RB	actively
+catchier	catchy	JJR	_
+largest	large	JJS	_
+dominated	dominated	JJ	_
+dominated	dominate	VBD	_
+best	well	RBS	_
+actively	actively	RB	_
 
-optima	NNS	optimum
-churches	NNS	church
-gentlemen	NNS	gentleman
+optima	optimum	NNS	_
+churches	church	NNS	_
+gentlemen	gentleman	NNS	_
 
-took	VBD	take
-studied	VBD	study
-studying	VBG	study
-studying	NN	studying
-studies	NNS	study
+took	take	VBD	_
+studied	study	VBD	_
+studying	study	VBG	_
+studying	studying	NN	_
+studies	study	NNS	_
 
-1st	CD	#ord#
-12nd	CD	#ord#
-23rd	CD	#ord#
-34th	CD	#ord#
-first	CD	#ord#
-third	CD	#ord#
-fourth	CD	#ord#
+1st	#ord#	CD	_
+12nd	#ord#	CD	_
+23rd	#ord#	CD	_
+34th	#ord#	CD	_
+first	#ord#	CD	_
+third	#ord#	CD	_
+fourth	#ord#	CD	_
 
-zero	CD	#crd#
-ten	CD	#crd#
-eleven	CD	#crd#
-fourteen	CD	#crd#
+zero	#crd#	CD	_
+ten	#crd#	CD	_
+eleven	#crd#	CD	_
+fourteen	#crd#	CD	_
 
-10%	XX	0
-$10	XX	0
-A.01	XX	a.0
-A:01	XX	a:0
-A/01	XX	a/0
-.01	XX	0
-12.34	XX	0
-12,34,56	XX	0
-12-34-56	XX	0
-12/34/46	XX	0
-$10.23,45:67-89/10%	XX	0
+10%	0	XX	_
+$10	0	XX	_
+A.01	a.0	XX	_
+A:01	a:0	XX	_
+A/01	a/0	XX	_
+.01	0	XX	_
+12.34	0	XX	_
+12,34,56	0	XX	_
+12-34-56	0	XX	_
+12/34/46	0	XX	_
+$10.23,45:67-89/10%	0	XX	_
 
-.!?-*=~,	XX	.!?-*=~,
-..!!??--**==~~,,	XX	..!!??--**==~~,,
-...!!!???---***===~~~,,,	XX	..!!??--**==~~,,
-....!!!!????----****====~~~~,,,,	XX	..!!??--**==~~,,
+.!?-*=~,	.!?-*=~,	XX	_
+..!!??--**==~~,,	..!!??--**==~~,,	XX	_
+...!!!???---***===~~~,,,	..!!??--**==~~,,	XX	_
+....!!!!????----****====~~~~,,,,	..!!??--**==~~,,	XX	_
 
-http://www.google.com	XX	#url#
-www.google.com	XX	#url#
-mailto:somebody@google.com	XX	#url#
-some-body@google+.com	XX	#url#
+http://www.google.com	#url#	XX	_
+www.google.com	#url#	XX	_
+mailto:somebody@google.com	#url#	XX	_
+some-body@google+.com	#url#	XX	_
 
