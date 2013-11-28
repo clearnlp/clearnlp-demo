@@ -140,7 +140,7 @@ public class DemoMultiParse
 
 	public static void main(String[] args)
 	{
-		String modelType  = args[0];	// ontonotes-en
+		String modelType  = args[0];	// "general-en" or "medical-en"
 		String inputFile  = args[1];
 		String outputFile = args[2];
 

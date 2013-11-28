@@ -126,7 +126,7 @@ public class DemoMultiThread
 
 	public static void main(String[] args)
 	{
-		String modelFile  = args[0];	// general-en
+		String modelFile  = args[0];	// "general-en" or "medical-en"
 		String inputFile  = args[1];
 		String outputFile = args[2];
 		int    numThreads = Integer.parseInt(args[3]);
