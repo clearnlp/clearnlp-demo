@@ -48,7 +48,7 @@ import com.clearnlp.component.AbstractComponent;
 import com.clearnlp.component.dep.AbstractDEPParser;
 import com.clearnlp.dependency.DEPTree;
 import com.clearnlp.nlp.NLPGetter;
-import com.clearnlp.nlp.NLPLib;
+import com.clearnlp.nlp.NLPMode;
 import com.clearnlp.reader.AbstractReader;
 import com.clearnlp.segmentation.AbstractSegmenter;
 import com.clearnlp.tokenization.AbstractTokenizer;
@@ -67,11 +67,11 @@ public class DemoMultiParse
 	public DemoMultiParse(String modelType, String inputFile, String outputFile) throws Exception
 	{
 		AbstractTokenizer tokenizer  = NLPGetter.getTokenizer(language);
-		AbstractComponent tagger     = NLPGetter.getComponent(modelType, language, NLPLib.MODE_POS);
-		AbstractComponent parser     = NLPGetter.getComponent(modelType, language, NLPLib.MODE_DEP);
-		AbstractComponent identifier = NLPGetter.getComponent(modelType, language, NLPLib.MODE_PRED);
-		AbstractComponent classifier = NLPGetter.getComponent(modelType, language, NLPLib.MODE_ROLE);
-		AbstractComponent labeler    = NLPGetter.getComponent(modelType, language, NLPLib.MODE_SRL);
+		AbstractComponent tagger     = NLPGetter.getComponent(modelType, language, NLPMode.MODE_POS);
+		AbstractComponent parser     = NLPGetter.getComponent(modelType, language, NLPMode.MODE_DEP);
+		AbstractComponent identifier = NLPGetter.getComponent(modelType, language, NLPMode.MODE_PRED);
+		AbstractComponent classifier = NLPGetter.getComponent(modelType, language, NLPMode.MODE_ROLE);
+		AbstractComponent labeler    = NLPGetter.getComponent(modelType, language, NLPMode.MODE_SRL);
 		
 		AbstractComponent[] preComponents  = {tagger};	// components used before parsing
 		AbstractComponent[] postComponents = {identifier, classifier, labeler};	// components used after parsing
