@@ -1,0 +1,43 @@
+<script type="text/javascript" src="clearnlp_demo.js">
+</script>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link href="clearnlp_demo.css" rel="stylesheet" media="screen"/>
+<title>ClearNLP demonstration</title>
+</head>
+
+<body>
+<div align="center">
+  <h1>ClearNLP<br>Demonstration</h1>
+</div>
+
+<div id="css_deptree_canvas">
+  <canvas id="cv_deptree" height="2000"></canvas>
+</div>
+<br>
+<div align="center">
+  <button onclick="clickBackward();" style="width:55px;height:48px" type="button"><img src="img/backward.png" width="40" height="40"/></button>
+  <button onclick="clickPrevious();" style="width:55px;height:48px" type="button"><img src="img/previous.png" width="40" height="40"/></button>
+  <button onclick="clickNext();"     style="width:55px;height:48px" type="button"><img src="img/next.png"     width="40" height="40"/></button>
+  <button onclick="clickForward();"  style="width:55px;height:48px" type="button"><img src="img/forward.png"  width="40" height="40"/></button>
+</div>          
+<br>
+<div id="css_input" align="center"><table>
+<tr>
+  <td>
+    <textarea id="ta_input" style="width:700px;height:585px"></textarea><br>
+  </td>
+  <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+  <td style="vertical-align:top;">
+    <input  type="file"   onchange="readFile(this.files[0])"/><br><br>
+    <button type="button" onclick="initDEPTrees();" style="width:110px;height:30px;font-family:times;font-size:14px;">Process</button><br><br>
+    <select id="st_treeId" multiple="multiple" style="width:110px;height:497px;" onchange="selectTreeID();"></select>
+  </td> 
+</tr>
+</table></div>
+
+<P class=copyright>&copy; 2014 Jinho D. Choi. All rights reserved.</P>
+</body>
+</html>
